@@ -36,11 +36,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class MyHomePage{
-  
-}
-
-class _MyHomePageState{
-  
-}
