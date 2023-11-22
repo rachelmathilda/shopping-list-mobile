@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/screens/shoplist_form.dart';
-import 'package:shopping_list/models/product.dart';
+import 'package:shopping_list/screens/list_product.dart';
+import 'package:shopping_list/screens/login.dart';
+import 'package:provider/provider.dart';
+import 'package:pbp_django_auth/pbp_django_auth.dart';
 
 class ShopItem {
   final String name;

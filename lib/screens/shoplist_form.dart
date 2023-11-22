@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/widgets/left_drawer.dart';
 import 'package:shopping_list/screens/menu.dart';
+import 'package:provider/provider.dart';
+import 'package:pbp_django_auth/pbp_django_auth.dart';
+import 'dart:convert';
 
 class ShopFormPage extends StatefulWidget {
   const ShopFormPage({super.key});
@@ -122,12 +125,11 @@ class _ShopFormPageState extends State<ShopFormPage> {
                               // Kirim ke Django dan tunggu respons
                               // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
                               final response = await request.postJson(
-                                  "http://<URL_APP_KAMU>/create-flutter/",
+                                  "http://rachel-mathilda-tutorial/create-flutter/",
                                   jsonEncode(<String, String>{
                                     'name': _name,
                                     'price': _price.toString(),
                                     'description': _description,
-                                    // TODO: Sesuaikan field data sesuai dengan aplikasimu
                                   }));
                               if (response['status'] == 'success') {
                                 ScaffoldMessenger.of(context)
