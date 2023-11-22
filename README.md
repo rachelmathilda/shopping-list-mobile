@@ -1,0 +1,1 @@
+https://install.appcenter.ms/orgs/pbp_celz/apps/shopping-list/distribution_groups/public
